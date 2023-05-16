@@ -24,10 +24,12 @@ jobs:
     #Compilando com JAVA
     
     - name: Comiplar o Projeto
-      run: javac -cp src Main.java
+      run: |
+             cd src
+              javac -cp . Main.java
     
     #Executar o projeto
-    - name: Exectundo Projeto
+    - name: Exectundo Projetos
       run: |
             cd src
             java -cp . Main
