@@ -41,7 +41,7 @@ jobs:
       name: Deploy Docker imagem
       with:
           image: jhonatasalves/app_f
-          tags: latest
+          tags: ${{github.run_number}}
           registry: docker.io
           dockerfile: dockerfile
           username: ${{ secrets.DOCKERHYB_USUARIO }}
