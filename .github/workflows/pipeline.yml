@@ -29,10 +29,11 @@ jobs:
       run: |
              cd src
               javac -cp . Main.java
+              javac -cp . Teste.java
     
     #Executar o projeto
-    - name: Exectundo Projeto
+    - name: Exectundo Projeto TESTE
       run: |
             cd src
-            java -cp . Main
+            java -cp . Teste
     
